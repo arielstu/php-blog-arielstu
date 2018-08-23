@@ -1,0 +1,1001 @@
+@import "normalize.css";
+*{
+    box-sizing:border-box;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration:none;
+}
+
+.header{
+    background:skyblue;
+    margin-bottom:1rem;
+}
+.container{
+    margin:0 auto;
+    width:80%;
+}
+
+.container-header{
+    padding-top:3rem;
+    padding-bottom:2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .log{
+    color:#fff;
+    font-weight: 100;
+    font-size: 2rem;
+    margin:0;
+    
+}
+.main-nav .ul{
+    padding:0;
+    display:flex;
+    margin:0;
+    align-items: baseline;
+}
+.main-nav .li{
+    list-style: none;
+    
+}
+.main-nav .li + .li{
+    margin-left:1rem;
+}
+.main-nav .a{
+    color:#fff;
+    padding-bottom:5px;
+    border-bottom:1px solid transparent;
+    transition:.3s;
+}
+.img-perfil-header{
+    width:3rem;
+    max-height: 3.3rem;
+    overflow: hidden;
+    margin:0 .5rem 0 0;
+    border:1px solid white;
+    
+}
+
+.btn-header-buscar{
+    display:none;
+}
+.text-header-buscar{
+    width:10rem;
+    padding:.2rem;
+    font-size:.8rem;
+    border:none;
+    box-shadow: 0 0 5px rgb(114, 114, 114);
+}
+.main-nav .a:hover{
+    border-bottom:1px solid #fff;
+    
+}
+
+.entradas{
+    width:90%;
+    margin:0 auto;
+    max-width: 800px;
+}
+.a-title-home{
+    display:block;
+}
+.h1{
+  font-weight: 100;
+  color:rgb(34, 34, 34);
+}
+.h1 span{
+    color:rgb(0, 140, 196);
+}
+
+.entrada{
+    position:relative;
+    display:flex;
+    margin-bottom:1rem;
+    width:100%;
+    
+}
+
+.entrada .left{
+    border-left:.3rem solid rgb(62, 128, 250);
+    padding:.5rem 10.5rem .5rem .5rem;
+    margin-right:5px;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color:rgba(213, 212, 212, 0.2);
+    
+}
+.entrada .right{
+    background:rgba(0, 179, 238, 0.5);
+    color:#ffffff;
+    font-size:.8rem;
+    padding:.5rem;
+    flex-basis:100px;
+    flex-grow:0;
+    flex-shrink: 0;
+    border-radius: 0px 10px 10px 0; 
+    display:flex;
+    flex-direction:column;
+    justify-content: start;
+}
+.right .author{
+    margin-bottom:.3rem;
+}
+.right .fecha{
+    margin-bottom:.9rem;
+}
+.right .puntuaciones{
+    font-size:1.15rem;
+}
+
+
+
+.entrada .center{
+    display:block;
+    line-height: 0;
+    width:10rem;
+    max-height:7rem;
+    right:105px;
+    position: absolute;
+    align-self: center;
+}
+.entrada .title{
+    word-spacing: .3em;
+    word-wrap: break-word;
+    font-size:1rem;
+    color:rgb(63, 114, 192);
+    
+    
+}
+.entrada .intro{
+   color: rgb(44, 57, 84);
+   font-size:.9rem;
+}
+
+.entrada .cover{
+width:100%;
+}
+
+.foot-main{
+    background-color: rgb(92, 92, 92);
+    margin:0;
+    padding:.5rem 0;
+}
+.foot-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.redes{
+    flex-basis: 50%;
+    border-left:.1rem solid #fff;
+    padding-left:1rem;
+}
+.nav-redes-ul{
+    margin:0;
+    padding:0;
+    
+    
+}
+.nav-redes-li{
+    list-style: none;
+    margin-bottom:.5rem;
+    
+}
+.nav-redes-a{
+    color:#fff;
+    border-bottom:1px solid transparent;
+    transition:.3s;
+    
+    
+}
+.nav-redes-a:hover{
+    border-bottom:1px solid #fff;
+}
+.contactanos{
+    flex-basis: 50%;
+    border-left:.1rem solid #fff;
+    padding-left:1rem;
+}
+.link-contactanos{
+    color:#fff;
+    border-bottom:1px solid transparent;
+    transition:.3s;
+}
+.link-contactanos:hover{
+    border-bottom:1px solid #fff;
+}
+.copyright{
+    color:#fff;
+    flex-basis: 100%;
+    padding:1rem 0;
+    margin:0;
+    text-align: center;
+}
+.single{
+    width:90%;
+    margin:0 auto 2rem auto;
+    max-width:800px;
+}
+.article-single{
+    margin-bottom:2rem;
+}
+.single .title{
+    font-size:1.6rem;
+    
+}
+.single .author,.single .fecha{
+    display:block;
+    font-size:.8rem;
+    color:rgb(116, 116, 116);
+    margin-bottom:1rem;
+}
+.single .cover{
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    display:block;
+}
+.single .article{
+    margin-bottom:1rem; 
+   
+}
+
+.single .vistas, .single .comentarios,.single .puntuacion, .single .score{
+    margin-right:1rem;
+    color:rgb(0, 179, 238);
+    font-size:1.15rem;
+}
+
+.input-like{
+    display:none;
+}
+.form-like{
+    margin-left:1rem;
+    display:inline;
+}
+
+.no-like{
+    color:rgb(0, 179, 238);
+    font-size:1.15rem;
+    border:1px solid rgb(0, 179, 238);
+    padding:.2rem .5rem;
+    display: inline-block;
+}
+
+.like{
+    color:rgb(58, 58, 58);
+    font-size:1.15rem;
+    border:1px solid rgb(58, 58, 58);
+    padding:.2rem .5rem;
+    display: inline-block;
+}
+
+.like:hover, .no-like:hover{
+    cursor:pointer;
+    opacity: .6;
+}
+
+.form-cometario .text-coment{
+    display:block;
+    min-width:100%;
+    max-width:100%;
+    padding:.5rem;
+    min-height: 4rem;
+    margin-bottom:1rem;
+    font-size:.9rem;
+}
+.form-cometario{
+    margin-bottom:1rem;
+}
+.form-cometario .btn-coment{
+    border:none;
+    background:rgb(0, 140, 196);
+    padding:.5rem;
+    color:#fff;
+    border-radius:5px;
+}
+.form-cometario .btn-coment:hover{
+    opacity:.6;
+    cursor:pointer;
+}
+.coment_ind{
+    
+    padding:.5rem;
+    margin-bottom:.2rem;
+    display: flex;
+    border-bottom:1px solid gray;
+}
+.coment_ind .datos-user{
+    flex-basis:8rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+.coment_ind .user-coment{
+    margin:0;
+    text-align: center;
+}
+.coment_ind .fecha-coment{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:0 0 1rem 0;
+    font-size:.75rem;
+
+}
+.coment_ind .btn-delete-coment{
+    border:none;
+    padding:.2rem;
+    width:100%;
+    font-size:.8rem;
+    background:rgb(68, 68, 68);
+    color:#fff;
+}
+.coment_ind .btn-delete-coment:hover{
+    cursor:pointer;
+    opacity:.6;
+}
+.coment_ind .plot-coment{
+    flex-basis: 100%;
+    padding:.5rem;
+    font-size:.9rem;
+    margin:0;
+    color:rgb(116, 116, 116);
+}
+.img-user-comentario{
+    width:100%;
+    max-height: 8rem;
+}
+/* .......................... PANEL ARTICLE .......................... */
+.panel-article{
+    width:90%;
+    margin:1rem auto;
+}
+.cont-stadisticas{
+    color:rgb(0, 179, 238);
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:.2rem;
+}
+.h-stadisticas{
+    margin:0;
+    padding:1rem;
+    flex-basis: 100%;
+    font-weight: 100;
+    color:rgb(148, 148, 148);
+}
+.ind-stadist{
+    flex-basis: 30%;
+    text-align: center;
+    padding:1rem .5rem;
+    font-size:1.2rem;
+}
+.btn-new-article{
+    display:block;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding:1rem;
+    color:#fff;
+    background: rgb(0, 175, 0);
+    border-radius:0 0px 8px 8px;
+    font-size:1.3rem;
+    border:none;
+}
+.btn-new-article:hover{
+    opacity: .6;
+    cursor:pointer;
+}
+/* .......................... PANEL ARTICLE .......................... */
+
+/* .......................... PANEL user .......................... */
+.cont-user-entradas{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+}
+.main-entradas-user{
+    flex-basis: 800px;
+    
+}
+.aside-panel-user{
+    flex-basis: 13rem;
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+    align-items: flex-start;
+    background: #98bddf;
+}
+.cont-img-name-user{
+    display:flex;
+    flex-direction:column;
+}
+.cont-a-span-h-user{
+    display:flex;
+    flex-direction:column;
+}
+.h-name-user{
+    align-self: center;
+    font-weight: 500;
+    margin:0;
+    font-size:1.8rem;
+    word-wrap: break-word;
+    margin-bottom:.5rem;
+}
+.img-user{
+    width:100%;
+    border:1px solid white;
+    box-shadow: 0px 15px 15px -10px #000;
+    margin-bottom:1rem;
+}
+
+.h-first-name{
+    font-size:1rem;
+    margin:0;
+    color:#3b3b3b;
+}
+.span-user-ind{
+    font-size:.8rem;
+    color:#3b3b3b;
+}
+.span-role{
+    margin-bottom:.5rem;
+}
+.a-user-ind{
+    padding:.3rem;
+    border-radius:7px;
+    background:white;
+    font-size:.8rem;
+    margin-bottom:.5rem;
+    color:#008cc4;
+}
+.a-user-ind:hover{
+    opacity:.6;
+    cursor:pointer;
+}
+/* .......................... PANEL user .......................... */
+/* .......................... PANEL ENTRADA .......................... */
+
+.panel-entrada{
+    margin-bottom:2rem;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.ind-panel-entrada{
+    flex-basis: 100%;
+    font-size:1rem;
+}
+.btn-actialilar-portada{
+    background:rgb(32, 101, 228);
+    padding:1rem .5rem;
+    color:#fff;
+    text-align: center;
+    
+}
+.btn-editar-articulo{
+    background:rgb(12, 84, 219);
+    padding:1rem .5rem;
+    color:#fff;
+    text-align: center;
+}
+.btn-publicar{
+    border:none;
+    padding:1rem .5rem;
+    color:#fff;
+    text-align: center;
+    width:100%;
+    height: 100%;
+}
+
+.btn-actialilar-portada:hover,.btn-publicar:hover,.btn-editar-articulo:hover{
+    cursor:pointer;
+    opacity: .6;
+}
+
+input[value="Publicar"]{
+    background:rgb(83, 131, 221);
+    
+
+}
+input[value="Ocultar"]{
+    background:rgb(255, 79, 79);
+}
+.span-public-date{
+    background:rgb(103, 143, 218);
+    padding:1rem .5rem;
+    color:#fff;
+    text-align: center;
+}
+
+.sure{
+    background:rgb(255, 182, 182);
+    padding:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.h-sure{
+    flex-basis:100%;
+    text-align: center;
+    color:rgb(255, 79, 79);
+    margin:0 0 1rem 0;
+}
+.form-sure,.btn-nosure{
+    flex-basis: 50%;
+}
+.btn-nosure{
+    text-align: center;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    padding:1rem;
+    font-size:1.2rem;
+    color:rgb(150, 6, 6);
+}
+.btn-sisuer{
+    width:100%;
+    border:none;
+    background: rgb(150, 6, 6);
+    padding:1rem;
+    font-size:1.2rem;
+    color:#fff;
+}
+.btn-nosure:hover,.btn-sisuer:hover{
+    cursor:pointer;
+    opacity:.6;
+}
+/* .......................... PANEL ENTRADA .......................... */
+/* .......................... form new article .......................... */
+.main-new-article,.main-editar-articulo{
+    width:90%;
+    margin:0 auto 1rem auto;
+}
+.h-new-article{
+    width:100%;
+    margin:0 0 .5rem 0;
+    text-align: center;
+}
+.h-ex{
+    color:rgb(0, 179, 238);
+}
+.group-new-article{
+    padding:.5rem 0;
+}
+.title-new-article,.intro-new-article,.tags-new-article,.plot-new-article{
+    display:block;
+    font-size:1.2rem;
+    color:rgb(61, 61, 61);
+    margin-bottom:.3rem;
+}
+.inp-new-article{
+    width:100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding:.5rem 1rem;
+    
+    
+}
+.group-new-article input{
+    border-width:0 0 .1rem 0rem;
+    border-style: solid;
+    border-color:rgb(145, 145, 145);
+    background:rgb(245, 245, 245);
+    font-size:1.1rem;
+    transition:.2s;
+}
+.group-new-article input:focus{
+    outline:0;
+    border-color:rgb(0, 179, 238);
+}
+.group-new-article textarea{
+    border:.1rem solid rgb(145, 145, 145);
+    font-size:1.01rem;
+    transition:.2s;
+}
+.group-new-article textarea:focus{
+    outline:0;
+    border:.1rem solid rgb(0, 179, 238);
+}
+
+.inp-intro{
+    min-height: 7rem;
+}
+.inp-plot{
+    min-height: 40rem;
+}
+.error-list{
+    background:rgb(255, 182, 182);
+    padding:1rem;
+}
+.error-list li{
+list-style: none;
+margin-bottom:.3rem;
+font-size:1.1rem;
+color:rgb(172, 56, 56);
+}
+/* .......................... form new article .......................... */
+
+/* .......................... form login .......................... */
+.sec-login{
+    width:90%;
+    max-width: 600px;
+    margin:4rem 0 4rem 3rem;
+    
+    display:flex;
+    justify-content: space-between;
+}
+.form_login{
+    flex-basis: 59%;
+
+}
+.h-login{
+    margin:0 auto;
+    padding:.5rem;
+    background:rgb(0, 179, 238);
+    font-size:1.2rem;
+    color:#fff;
+    text-align: center;
+    margin-bottom:2rem;
+}
+.sidebar-login{
+    flex-basis: 40%;  
+    background-image:url('../img/blue.jpg');
+    background-size:cover;
+    background-position-y: center;
+}
+.cont-sidebar-login{
+    background-color:rgba(0, 179, 238,.7);
+    padding:.5rem;
+    width:100%;
+    height: 100%;
+}
+
+
+.label-login{
+    display:block;
+    
+}
+.inp-login{
+    width:100%;
+    margin:.5rem auto;
+}
+.pass-login,.user-name-login{
+    padding:.5rem;
+    font-size:1.1rem;
+    border-width:0 0 .2rem 0;
+    border-color:rgb(25, 25, 186);
+    margin-bottom:.8rem;
+}
+.pass-login:focus,.user-name-login:focus{
+    outline: none;
+}
+.btn-login{
+    padding:.3rem;
+    background:rgb(0, 179, 238); 
+    border:none;
+    font-size:1.1rem;
+    color:#fff;
+    margin:0;
+}
+.btn-login:hover{
+    opacity:.6;
+    cursor:pointer;
+}
+.h-sidebar-login{
+    font-size:1rem;
+    width:100%;
+    margin:0 0 .3rem 0;
+    font-weight: 100;
+    text-align: center;
+}
+.a-sidebar-login{
+    display:block;
+    color:rgb(93, 169, 255);
+    width:100%;
+    margin:0;
+    text-align: center;
+}
+.opc-sub{
+    margin-bottom:3rem;
+}
+.error-login{
+    width:80%;
+    margin:0 auto 1rem;
+    text-align: center;
+    background:rgb(245, 101, 101);
+    padding:.3rem 0;
+    color:#fff;
+}
+
+/* .......................... form login .......................... */
+/* .......................... form logout .......................... */
+.sec-logout{
+    height:calc(100vh - 255px);
+}
+.form_logout{
+    max-width:360px;
+    background:rgb(250, 250, 250);
+    margin:0 auto;
+
+}
+.h-logout{
+    margin:0;
+    padding:.5rem 0;
+    text-align: center;
+    font-size:1.3rem;
+}
+.si-logout{
+    width:100%;
+    border:0;
+    padding:.5rem;
+    font-size:1.1rem;
+    background:rgb(223, 96, 96);
+    color:#fff;
+}
+.si-logout:hover{
+    opacity:.6;
+    cursor:pointer;
+}
+/* .......................... form logout .......................... */
+/* .......................... form registro.......................... */
+.main-registrarse{
+    width:90%;
+    max-width: 720px;
+    margin:0 auto 2rem;
+    padding:1rem;
+}
+.lab-form-registro{
+    display:block;
+    color:rgb(0, 140, 196);
+    font-size:1.2rem;
+}
+.inp-form-registro{
+    width:100%;
+    margin-bottom:1rem;
+    padding:.2rem 1rem;
+    border-width:0 0 .2rem 0;
+    border-color: rgb(0, 179, 238);
+    font-size:1rem;
+}
+.inp-form-registro:focus{
+    outline: none;
+    border-color: rgb(0, 140, 196);
+}
+.btn-registrarse{
+    width:100%;
+    padding:.5rem;
+    border:none;
+    background:rgb(0, 140, 196);
+    color:#fff;
+    font-size:1.1rem;
+}
+.btn-registrarse:hover{
+    opacity:.6;
+    cursor:pointer;
+}
+.succes-registro{
+    padding:.5rem 1rem;
+    text-align:center;
+    font-size:1.1rem;
+    background:rgb(124, 184, 124);
+    color:rgb(0, 175, 0);
+}
+/* .......................... form registro .......................... */
+/* .......................... article single .......................... */
+.parrafo-single{
+line-height: 1.8em;
+}
+.parrafo-single img{
+    display:block;
+    max-width: 100%;
+    margin:0 auto;
+}
+.parrafo-single h1{
+    margin:0;    
+    font-size:1.7rem;
+    font-weight: 500;
+    padding:.5rem;
+}
+.parrafo-single p{
+margin:0;
+}
+.parrafo-single .center{
+    text-align: center;
+}
+.parrafo-single .right{
+    text-align: right;
+}
+.parrafo-single .left{
+    text-align: right;
+}
+.parrafo-single .rem-1{
+    font-size:1.1rem;
+}
+.parrafo-single .rem-2{
+    font-size:2rem;
+}
+.parrafo-single .rem-3{
+    font-size:2.5rem;
+}
+.parrafo-single .weigth-1{
+    font-weight: 500;
+}
+.parrafo-single .weigth-2{
+    font-weight: 700;
+}
+.parrafo-single .weigth-3{
+    font-weight: 900;
+}
+.parrafo-single .italic{
+    font-style: italic;
+}
+.parrafo-single .underline{
+    text-decoration: underline;
+}
+.font-amarillo{
+    background: rgb(245, 238, 38); 
+}
+.font-azul{
+    background: rgb(46, 161, 206); 
+}
+.font-rojo{
+    background: rgb(237, 82, 82); 
+}
+.color-blanco{
+    color:#fff;
+}
+.color-griz{
+    color:rgb(179, 179, 179);
+}
+.color-azul-1{
+    color:#008cc4;
+}
+.color-azul-2{
+    color:#005677;
+}
+.color-azul-3{
+    color:#001a24;
+}
+.color-azul-4{
+    color:#000e77;
+}
+.color-rojo-1{
+    color:#ff0606;
+}
+.color-rojo-2{
+    color:#b10505;
+}
+.color-rojo-3{
+    color:#3d0000;
+}
+.color-rojo-4{
+    color:#f87171;
+}
+.color-verde-1{
+    color:#03ff18;
+}
+.color-verde-2{
+    color:#01a20e;
+}
+.color-verde-3{
+    color:#005707;
+}
+.color-amarillo-1{
+    color:#fff700;
+}
+.color-amarillo-2{
+    color:#bab300;
+}
+.color-amarillo-3{
+    color:#4f4c00;
+}.color-anaranjado-1{
+    color:#ff8400;
+}
+.color-anaranjado-2{
+    color:#9e5200;
+}
+.color-anaranjado-3{
+    color:#3f2100;
+}
+/* .......................... article single .......................... */
+/* .......................... paginacion .......................... */
+.paginacion{
+    display:flex;
+    justify-content: space-between;
+    margin:0 0 1rem 0;
+    padding:0;
+}
+.li-paginacion{
+    list-style: none;
+    margin:0;
+}
+.a-paginacion, .li-paginacion-act{
+    border:.1rem solid;
+    padding:.3rem .6rem;
+    display:block;
+    border-radius: 5px;
+    font-size:1.1rem;
+}
+.a-paginacion{
+    border-color:rgb(0, 140, 196);
+    color:rgb(0, 140, 196);
+}
+.li-paginacion-act{
+    border-color:rgb(107, 138, 148);
+    color:rgb(107, 138, 148);
+    background:rgb(255, 243, 187);
+}
+.a-paginacion:hover, .li-paginacion-act:hover{
+    cursor:pointer;
+    opacity: .6;
+}
+/* .......................... paginacion .......................... */
+
+@media only screen and (max-width: 1000px) {
+    .cont-user-entradas{
+        flex-direction:column;
+        width:95%;
+        margin-right:auto;
+        margin-left:auto;
+        
+    }
+    .main-entradas-user{
+        flex-basis:auto;
+    }
+    .aside-panel-user{
+        flex-direction:row;
+        flex-basis:auto;
+        align-items: center;
+    }
+    .cont-img-name-user{
+       margin-right:1rem;
+    }
+    .img-user{
+        width:11rem;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .container-header{
+        flex-direction: column;
+    }
+    .main-nav .ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-nav .ul .li + .li{
+        margin:1rem 0 0 0 ;
+    }
+    .entrada{
+        flex-direction: column;
+        border-right: .3rem solid rgb(62, 128, 250);
+        border-left: .3rem solid rgb(62, 128, 250);
+    }
+    .entrada .right{
+        border-radius:0;
+        
+    }
+    .entrada .center{
+        position:static;
+        width:80%;
+        max-height: 15rem;
+        overflow: hidden;
+        
+    }
+    .entrada .left{
+        padding:.5rem;
+        border:0;
+    }
+}

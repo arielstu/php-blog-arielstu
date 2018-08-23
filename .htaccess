@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIP_FILENAME} !-d
+RewriteCond %{SCRIP_FILENAME} !-f
+
+RewriteRule ^([0-9a-zA-Z-]+)$ index.php?p=$1 [L]
+RewriteRule ^([0-9a-zA-Z-]+)/$ index.php?p=$1 [L]
+RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)$ index.php?p=$1&id=$2 [L]
+RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)/$ index.php?p=$1&id=$2  [L]
+RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)/([0-9]+)$ index.php?p=$1&id=$2&pag=$3 [L]
+RewriteRule ^([0-9a-zA-Z-]+)/([0-9a-zA-Z-]+)/([0-9]+)/$ index.php?p=$1&id=$2&pag=$3  [L]
